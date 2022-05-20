@@ -15,6 +15,7 @@ class AnimalView(APIView):
         animal = Animal.objects.all()
         seriealizer = AnimalSerializer(animal, many = True)
         return Response(seriealizer.data, status=status.HTTP_200_OK)
+    
 
 
 class AnimalRetriveView(APIView):
