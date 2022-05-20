@@ -11,6 +11,7 @@ class CharacteristcSerializer(serializers.Serializer):
     name = serializers.CharField()
 
 class AnimalSerializer(serializers.Serializer):
+    id = serializers.IntegerField()
     name = serializers.CharField()
     age = serializers.FloatField()
     sex = serializers.CharField()
